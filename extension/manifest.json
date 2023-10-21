@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "youtube adblocker warning bypass",
+    "version": "1.0",
+    "description": "",
+    "permissions": ["activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    }
+  }
