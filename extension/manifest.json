@@ -1,11 +1,26 @@
 {
-    "manifest_version": 2,
-    "name": "youtube adblocker warning bypass",
-    "version": "1.0",
-    "description": "",
-    "permissions": ["activeTab"],
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": true
-    }
+  "manifest_version": 2,
+  "name": "youtube adblocker warning bypass",
+  "version": "1.0",
+  "description": "",
+  "permissions": [
+    "activeTab",
+    "webNavigation",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "icon.png"
+    },
+    "default_popup": "popup.html"
   }
+}
