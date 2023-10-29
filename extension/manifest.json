@@ -8,10 +8,11 @@
     "webNavigation",
     "tabs",
     "http://*/*",
-    "https://*/*"
+    "https://*/*",
+    "storage"
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js", "popup.js"],
     "persistent": true
   },
   "browser_action": {
